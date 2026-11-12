@@ -3,14 +3,7 @@
     <head>
         <title>My home page</title>
         <meta name="description" content="This is the homepage for my website. It is the first thing you should look when want to know me (professionally). ">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-            crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/tailwind.css">
 
         <style>
             .profile-picture {
@@ -30,234 +23,278 @@
         </script>
     </head>
     <body>
-
-        <header>
-            <div class="navbar navbar-dark bg-dark">
-                <div class="container d-flex justify-content-between">
-                    <a href="#" class="navbar-brand">Hi there</a>
+        <div>
+          <div>
+            <img class="h-32 w-full object-cover lg:h-48" src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+          </div>
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
+              <div class="flex">
+                <img class="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32" src="/assets/mypicture.JPG" alt="my picture">
+              </div>
+              <div class="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+                <div class="sm:hidden md:block mt-6 min-w-0 flex-1">
+                  <h1 class="text-2xl font-bold text-gray-900 truncate">Ashraf</h1>
                 </div>
-            </div>
-        </header>
-
-        <div class="jumbotron">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                    <img src="/assets/mypicture.JPG" class="img-thumbnail profile-picture">
-                    </img>
-                    </div>
-                    <div class="col-md-8">
-                        <h1>My name is Ashraf <small class="text-muted">(aka:asdacap)</small></h1>
-                        <h2>Muhammad Amirul Ashraf bin Mohamad Fauzi <br /> <small class="text-muted">Yes its quite a long name, I know. Just call me Ashraf</small></h2>
-                    </div>
+                <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+                    <a href="mailto:asdacap@gmail.com">
+                        <button type="button" class="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                            <!-- Heroicon name: solid/mail -->
+                            <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <span>Message</span>
+                        </button>
+                    </a>
                 </div>
+              </div>
             </div>
+            <div class="hidden sm:block md:hidden mt-6 min-w-0 flex-1">
+              <h1 class="text-2xl font-bold text-gray-900 truncate">Amirul Ashraf</h1>
+            </div>
+
+
+        <div class="mt-5 border-t border-gray-200">
+          <dl class="divide-y divide-gray-200">
+            <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Full name</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                <span class="flex-grow">Muhammad Amirul Ashraf</span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">About</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                <span class="flex-grow"> 
+Ashraf is a generalist with extensive web development experience. His ability to quickly learn new skills allows him to utilize a wide range of technology, such as Rails, Laravel, .Net, React, Go, Java, and many more. In addition, his work experience from small contract-based jobs to large enterprise-class employers, such as Grab and Amazon, can bring a wide range of invaluable perspectives.
+                </span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Specialization</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                <span class="flex-grow">Backend development</span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">LinkedIn</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  <span class="flex-grow"><a href="https://www.linkedin.com/in/amirul-ashraf-fauzi/">https://www.linkedin.com/in/amirul-ashraf-fauzi/</a></span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Github</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  <span class="flex-grow"><a href="https://github.com/asdacap/">https://github.com/asdacap/</a></span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Email address</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  <span class="flex-grow"><a href="mailto:asdacap@gmail.com">asdacap@gmail.com</a></span>
+              </dd>
+            </div>
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Language</dt>
+              <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                  <ul>
+                      <li>English</li>
+                      <li>Malay</li>
+                  </ul>
+              </dd>
+            </div>
+
+            <div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Attachments</dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                <ul role="list" class="border border-gray-200 rounded-md divide-y divide-gray-200">
+                  <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                    <div class="w-0 flex-1 flex items-center">
+                      <!-- Heroicon name: solid/paper-clip -->
+                      <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                      </svg>
+                      <a href="/assets/cv.pdf"><span class="ml-2 flex-1 w-0 truncate"> cv.pdf </span></a>
+                    </div>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+
+            <div class="py-4 sm:grid sm:py-5 sm:gap-4">
+              <dt class="text-sm font-medium text-gray-500">Experience</dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0">
+
+                  <div class="bg-white shadow overflow-hidden sm:rounded-md">
+                      <ul role="list" class="divide-y divide-gray-200">
+
+                          <li>
+                              <a href="#" class="block hover:bg-gray-50">
+                                  <div class="py-4 px-4">
+                                      <div class="flex items-center justify-between">
+                                          <p class="font-medium truncate">Amazon Prime Video - Software Development Engineer</p>
+                                      </div>
+                                      <div class="mt-1 sm:flex sm:justify-left">
+                                          <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                              <!-- Heroicon name: solid/calendar -->
+                                              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                              </svg>
+                                              <p>
+                                              <time>August 2020 - March 2022</time>
+                                              </p>
+                                          </div>
+                                          <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
+                                          <!-- Heroicon name: solid/location-marker -->
+                                          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                          London, United Kingdom
+                                          </p>
+                                      </div>
+                                      <div class="mt-2">
+                                          Part of Amazon Prime Video, Mobile Quality Platform. 
+                                          Involved in developing tools that improve the quality of Amazon Prime Video's mobile app. 
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="block hover:bg-gray-50">
+                                  <div class="py-4 px-4">
+                                      <div class="flex items-center justify-between">
+                                          <p class="font-medium truncate">Grab - Senior Software Engineer, Backend</p>
+                                      </div>
+                                      <div class="mt-1 sm:flex sm:justify-left">
+                                          <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                              <!-- Heroicon name: solid/calendar -->
+                                              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                              </svg>
+                                              <p>
+                                              <time>Apr 2020 - Jul 2022</time>
+                                              </p>
+                                          </div>
+                                          <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
+                                          <!-- Heroicon name: solid/location-marker -->
+                                          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                          Petaling Jaya, Malaysia
+                                          </p>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="block hover:bg-gray-50">
+                                  <div class="py-4 px-4">
+                                      <div class="flex items-center justify-between">
+                                          <p class="font-medium truncate">Grab - Software Engineer, Backend</p>
+                                      </div>
+                                      <div class="mt-1 sm:flex sm:justify-left">
+                                          <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                              <!-- Heroicon name: solid/calendar -->
+                                              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                              </svg>
+                                              <p>
+                                              <time>Nov 2018 - Mar 2020</time>
+                                              </p>
+                                          </div>
+                                          <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
+                                          <!-- Heroicon name: solid/location-marker -->
+                                          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                          Petaling Jaya, Malaysia
+                                          </p>
+                                      </div>
+                                      <div class="mt-2">
+                                          <p> - Implement and maintain Grab's safety related features such as customers face recognition integrations, textual machine learning pipelines and others. </p>
+                                          <p> - Quickly adapted to Grab's vast back-end architecture, which helps bring the new KL team up to speed. </p>
+                                          <p> - Exposed to the culture and practices needed to work with a large micro-service architecture with very high QPS and reliability requirement.</p>
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="block hover:bg-gray-50">
+                                  <div class="py-4 px-4">
+                                      <div class="flex items-center justify-between">
+                                          <p class="font-medium truncate">Petronas ICT - Full Stack Developer (Contract)</p>
+                                      </div>
+                                      <div class="mt-1 sm:flex sm:justify-left">
+                                          <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                              <!-- Heroicon name: solid/calendar -->
+                                              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                              </svg>
+                                              <p>
+                                              <time>Apr 2018 - Nov 2018</time>
+                                              </p>
+                                          </div>
+                                          <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
+                                          <!-- Heroicon name: solid/location-marker -->
+                                          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                          Kuala Lumpur, Malaysia
+                                          </p>
+                                      </div>
+                                      <div class="mt-2">
+                                          Develop an improved version of a gas delivery monitoring system for Petronas Terengganu Operations Coordination Center. System consist of several AngularJS SPA connected to a .Net API server with MS-SQL database.
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="block hover:bg-gray-50">
+                                  <div class="py-4 px-4">
+                                      <div class="flex items-center justify-between">
+                                          <p class="font-medium truncate">Petronas ICT - .Net Developer (Contract)</p>
+                                      </div>
+                                      <div class="mt-1 sm:flex sm:justify-left">
+                                          <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                                              <!-- Heroicon name: solid/calendar -->
+                                              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                              </svg>
+                                              <p>
+                                              <time>Nov 2017 - Dec 2017</time>
+                                              </p>
+                                          </div>
+                                          <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-4">
+                                          <!-- Heroicon name: solid/location-marker -->
+                                          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                          </svg>
+                                          Kuala Lumpur, Malaysia
+                                          </p>
+                                      </div>
+                                      <div class="mt-2">
+                                          Develop a .NET MVC system to replace current IBM BPM based solution. Modified IBM BPM BPDs and interface with .NET MVC as a transitional solution through IBM BPM's REST API's.
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </div>
+
+              </dd>
+            </div>
+
+          </dl>
         </div>
 
-        <div class="container">
 
-
-            <h1 class="page-header">Who I am <small class="text-muted">Background story time!</small></h1>
-            <p>
-                Hi, my name is Muhammad Amirul Ashraf bin Mohamad Fauzi. Call me Ashraf. I'm a programmer, a general purpose "figure it out" guy
-                with a soft spot for making things fast. I started learning programming somewhere around the year 2007 when I got access to The Internet.
-                I studied Computer Science at IIUM, graduated 2017 as the batch's "Best Computer Science Student", and later did a Master of Artificial
-                Intelligence at University of Malaya, graduated 2025 with distinction. Used to be active in competitive programming, later setting problems for ACM-ICPC.
-                I started working as a freelancer during my University years, working on web based system, usually PHP or Ruby based. After that I did .Net contracts
-                for Petronas, backend for the Safety team at Grab, and testing tools at Amazon Prime Video in London. Since 2022 I'm an Ethereum core developer
-                at Nethermind, mostly making the client sync faster and its database smaller. I love experimenting with new stuff. I code anything I could get my
-                (metaphorical and literal) hands on from API-server, browser based application, storage appliances, to AI coding agents.
-                I'm not good with artworks, or making things visually pleasing. Oh look! I dropped my <a href="/assets/cv.pdf">CV</a>.
-            </p>
-
-            <dl class="row">
-                <dt class="col-sm-4 text-right">Spoken Language</dt>
-                <dd class="col-sm-8">Malay, English</dd>
-                <dt class="col-sm-4 text-right">Marital Status</dt>
-                <dd class="col-sm-8">Single :-(</dd>
-                <dt class="col-sm-4 text-right">Where am I</dt>
-                <dd class="col-sm-8">Kuala Lumpur, Malaysia</dd>
-                <dt class="col-sm-4 text-right">Known Programming Language</dt>
-                <dd class="col-sm-8">Hmm... I guess most popular imperative programming language. Mostly C#, Go, Rust, Java, TypeScript and Ruby these days. Knew a bit of Haskell, and some Elixir.</dd>
-                <dt class="col-sm-4 text-right">Favourite Programming Language</dt>
-                <dd class="col-sm-8">Go, then Kotlin</dd>
-                <dt class="col-sm-4 text-right">Favourite Editor</dt>
-                <dd class="col-sm-8">Right now, I'm using Intellij with emacs keybinding and IdeaVIM plugin. Trying spacemacs now...</dd>
-                <dt class="col-sm-4 text-right">Favourite Operating System</dt>
-                <dd class="col-sm-8">Not Windows. Usually an Ubuntu 18.04 on my desktop. The performance of my macbook is quite poor.</dd>
-            </dl>
-
-            <h1 class="page-header">What I do <small class="text-muted">Things that I'm good at.</small></h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Performance Optimisation</h3>
-                    <ul>
-                        <li>Profiling and hot-path tuning.</li>
-                        <li>Sync and pipeline optimisation, memory and allocation tuning.</li>
-                        <li>Benchmarking. If there is a performance curve, I want to bend it.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3>Backend &amp; Storage</h3>
-                    <ul>
-                        <li>C#/.Net, Go, Rust, Java, Ruby on Rails.</li>
-                        <li>Large micro-service architecture, high QPS, high reliability, big data.</li>
-                        <li>RocksDB internals, custom storage layouts, PostgreSQL, MS-SQL, MongoDB, Solr.</li>
-                        <li>ZFS, NVMe-oF, iSCSI, RDMA.</li>
-                        <li>Can do frontend too with TypeScript, React and Electron.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3>Ethereum</h3>
-                    <ul>
-                        <li>Execution client internals.</li>
-                        <li>State/snap sync and state database layouts.</li>
-                        <li>Member of the Protocol Guild.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <h1 class="page-header">What I don't do <small class="text-muted">Things that I'm not good at.</small></h1>
-            <ul>
-                <li>Design, Marketing, Artwork.</li>
-                <li>Things that I don't know how to do.</li>
-                <li>Project manager works</li>
-            </ul>
-
-            <style>
-                @media(min-width: 1200px){
-                    .portf{
-                        height:350px;
-                    }
-                }
-                @media(min-width: 992px){
-                    .portf{
-                        height:370px;
-                    }
-                }
-                .portf img{
-                    max-width:100%;
-                    border:1px solid grey;
-                }
-            </style>
-
-            <h1 class="page-header">What I did <small class="text-muted">That worth mentioning and can be mentioned.</small> </h1>
-            <ul>
-                <li>At <a href="https://github.com/NethermindEth/nethermind" target="_blank">Nethermind</a>: cut state/snap sync from ~3 hours to ~35 minutes,
-                    proposed and shipped the HalfPath database layout (~40% faster block processing, 20&times; less database growth), then shipped FlatDB,
-                    now the default state backend. One of the top three code contributors since 2022 with 750+ merged PRs.</li>
-                <li>At Amazon Prime Video: reduced a service codebase by 60% with a DSL and an open-source library.</li>
-                <li>At Grab: one of the earliest engineers at the KL development centre, building safety features like face recognition integrations.</li>
-                <li>Problem setter for ACM-ICPC Asia Regional Kuala Lumpur 2019.</li>
-            </ul>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <h3><a href="https://github.com/asdacap/treeterm" target="_blank">TreeTerm</a></h3>
-                    <p>A terminal multiplexer for running multiple AI coding agents across machines over SSH, with Git worktree workspaces.
-                        Made with TypeScript and Electron.</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h3><a href="https://github.com/asdacap/parrotdotnet" target="_blank">Parrot</a></h3>
-                    <p>A local coding agent that runs interactively, takes one-shot prompts, or is hosted as a service for remote clients.
-                        Made with .Net Native AOT.</p>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <h3><a href="https://github.com/asdacap/greendotrdma" target="_blank">GreenDotRDMA</a></h3>
-                    <p>A storage-appliance web UI exporting ZFS zvols over NVMe-oF and iSCSI, showing whether each export is actually served over RDMA.
-                        Made with Rust.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 portf">
-                    <h3><a href="https://github.com/asdacap/agvc" target="_blank">My FYP</a></h3>
-                    <img src="assets/agv.jpg" alt=""></img>
-                    <p>Central Management system for a fleet of AGV (Autonomous Guided Vehicle)</p>
-                </div>
-                <div class="col-md-6 col-lg-4 portf">
-                    <h3><a href="http://iiumschedule.asdacap.com/" target="_blank">Automatic IIUM Schedule Formatter/Maker</a></h3>
-                    <img src="assets/iiumschedule.png" alt="iiumschedule screenshot"></img>
-                    <p>It is some tools that help IIUM student with their course schedule. Backend is made with flask, and frontend
-                        uses jQuery, BackboneJs and Angularjs.</p>
-                </div>
-                <div class="col-md-6 col-lg-4 portf">
-                    <h3><a href="https://github.com/asdacap/cms" target="_blank">Contest Management System</a></h3>
-                    <img src="assets/cms.png" alt="iiumschedule screenshot"></img>
-                    <p>Modified the original CMS to fit the needs of IIUM Code Jam.</p>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <h2 class="page-header">What I use <small class="text-muted">Keyword of things that I can explain.</small></h2>
-            <div class="row">
-                <ul class="col-md-3">
-                    <li><a target="_blank" href="https://dotnet.microsoft.com/">C#/.Net</a></li>
-                    <li><a target="_blank" href="https://golang.org/">Go</a></li>
-                    <li><a target="_blank" href="https://www.rust-lang.org/">Rust</a></li>
-                    <li><a target="_blank" href="https://dev.java/">Java</a></li>
-                    <li><a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a></li>
-                    <li><a target="_blank" href="http://rubyonrails.org/">Ruby on Rails</a></li>
-                    <li><a target="_blank" href="https://ethereum.org/">Ethereum</a></li>
-                    <li><a target="_blank" href="http://git-scm.com/">Git</a></li>
-                    <li><a target="_blank" href="http://www.vim.org/">Vim</a></li>
-                    <li><a target="_blank" href="https://www.gnu.org/software/emacs/">Emacs</a></li>
-                </ul>
-                <ul class="col-md-3">
-                    <li><a target="_blank" href="http://en.wikipedia.org/wiki/Linux">Linux</a></li>
-                    <li><a target="_blank" href="https://openzfs.org/">ZFS</a></li>
-                    <li><a target="_blank" href="https://www.electronjs.org/">Electron</a></li>
-                    <li><a target="_blank" href="https://phoenixframework.org/">Phoenix</a></li>
-                    <li><a target="_blank" href="https://facebook.github.io/react-native/">React-Native</a></li>
-                    <li><a target="_blank" href="https://projects.spring.io/spring-boot/">Spring Boot</a></li>
-                    <li><a target="_blank" href="https://www.python.org/">Python</a></li>
-                    <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a></li>
-                    <li><a target="_blank" href="http://en.wikipedia.org/wiki/HTML">HTML/CSS/JS</a></li>
-                    <li><a target="_blank" href="https://elixir-lang.org/">Elixir</a></li>
-                </ul>
-                <ul class="col-md-3">
-                    <li><a target="_blank" href="https://jquery.org/">jQuery</a></li>
-                    <li><a target="_blank" href="https://angularjs.org/">AngularJS</a></li>
-                    <li><a target="_blank" href="https://facebook.github.io/react/">ReactJS</a></li>
-                    <li><a target="_blank" href="https://www.digitalocean.com/">Digital Ocean</a></li>
-                    <li><a target="_blank" href="https://cloud.google.com/appengine">Google App Engine</a></li>
-                    <li><a target="_blank" href="http://en.wikipedia.org/wiki/C%2B%2B">C/C++</a></li>
-                    <li><a target="_blank" href="http://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a></li>
-                    <li><a target="_blank" href="https://developers.facebook.com/">Facebook/Twitter API</a></li>
-                    <li><a target="_blank" href="http://www.nginx.com/">Nginx</a></li>
-                </ul>
-                <ul class="col-md-3">
-                    <li><a target="_blank" href="https://rocksdb.org/">RocksDB</a></li>
-                    <li><a target="_blank" href="http://www.mysql.com/">MySQL</a></li>
-                    <li><a target="_blank" href="http://www.postgresql.org/">PostgreSQL</a></li>
-                    <li><a target="_blank" href="https://www.microsoft.com/sql-server">MS-SQL</a></li>
-                    <li><a target="_blank" href="https://www.mongodb.com/">MongoDB</a></li>
-                    <li><a target="_blank" href="https://solr.apache.org/">Solr</a></li>
-                    <li><a target="_blank" href="https://aws.amazon.com/dynamodb/">DynamoDB</a></li>
-                    <li>And more that would make this list unnecessarily long...</li>
-                </ul>
-            </div>
-
-            <h2 class="page-header">Contact <small class="text-muted">Say hi.</small></h2>
-            <p>Email me at <a href="mailto:asdacap@gmail.com">asdacap@gmail.com</a></p>
-
-            <h2 class="page-header">Links <small class="text-muted">My other stuff.</small></h2>
-
-            <dl class="dl-horizontal">
-                <dt>Personal blog</dt>
-                <dd><a target="_blank" href="http://saya.asdacap.com">http://saya.asdacap.com</a></dd>
-                <dt>LinkedIn account</dt>
-                <dd><a target="_blank" href="https://www.linkedin.com/in/amirul-ashraf-fauzi/">https://www.linkedin.com/in/amirul-ashraf-fauzi/</a></dd>
-                <dt>Github account</dt>
-                <dd><a target="_blank" href="https://github.com/asdacap">https://github.com/asdacap</a></dd>
-            </dl>
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+          </div>
 
         </div>
 
